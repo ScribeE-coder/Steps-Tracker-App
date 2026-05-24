@@ -21,9 +21,43 @@ ApplicationWindow {
                 color: "white"
                 font.pixelSize: 28 
             }
-
-            
         }
+
+            Rectangle {
+                width: 360 
+                height: 60
+                color: "#2a2a4a"
+                radius: 8 
+
+                Row {
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.left: parent.left 
+                    anchors.leftMargin: 16 
+                    spacing: 12 
+
+                    Text { text: "1."; color: "gold"; font.pixelSize: 20}
+                    Text { text: "Bob"; color: "white"; font.pixelSize: 20}
+                    Text { text: "16 pts"; color: "#aaaaaa"; font.pixelSize: 20}
+                }
+            }
+
+            Rectangle {
+                width: 360
+                height: 60 
+                color: "2a2a4a"
+                radius: 8 
+
+                Row {
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.left: parent.left 
+                    anchors.leftMargin: 16
+                    spacing: 12 
+
+                    Text { text: "2."; color: "silver"; font.pixelSize: 20}
+                    Text { text: }
+                }
+            }
+        
 
         Text {
             anchors.centerIn: parent
