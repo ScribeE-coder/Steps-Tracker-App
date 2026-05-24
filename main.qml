@@ -20,7 +20,7 @@ ApplicationWindow {
         Image {
             sourceSize.width: parent.width
             sourceSize.height: parent.height 
-            source: ""
+            source: "" /* bro what do I even make the background image for this*/
             fillMode: Image.PreserveAspectCrop
         }
 
