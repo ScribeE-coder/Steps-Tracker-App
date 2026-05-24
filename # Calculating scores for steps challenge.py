@@ -71,8 +71,9 @@ class StepsChallenge:
         return self.user_score 
     
     # clear steps at the end of the week 
-    def clear_steps_list(self): 
-        self.steps_list = [] 
+    def clear_steps_list(self):
+        if self.days_check >= 7:  
+            self.steps_list = [] 
         return self.steps_list 
     
     def curr_score(self): 
