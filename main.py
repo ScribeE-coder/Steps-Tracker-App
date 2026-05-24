@@ -2,7 +2,6 @@ import sys
 import os 
 from PyQt6.QtGui import QGuiApplication
 from PyQt6.QtQml import QQmlApplicationEngine 
-from time import strftime, gmtime
 from PyQt6.QtGui import QGuiApplication 
 
 

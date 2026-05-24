@@ -6,7 +6,7 @@ ApplicationWindow {
     width: 600
     height: 600
     title: "Steps Tracker App"
-
+b
     Text {
         anchors.centerIn: parent
         text: "This app will keep track of who's winning the challenge."
