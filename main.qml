@@ -2,40 +2,34 @@ import QtQuick
 import QtQuick.Controls.Basic
 
 ApplicationWindow {
-    visible: true
-    width: 600
+    visible: true 
+    width: 400 
     height: 600
-    title: "Steps Tracker App"
+    title: "Steps Challenge"
 
-    Text {
-        anchors.centerIn: parent
-        text: "This app will keep track of who's winning the challenge."
-        font.pixelSize: 24
-        color: "white"
-    }
- 
     Rectangle {
         anchors.fill: parent 
+        color: "#1a1a2e"
 
-        Image {
-            sourceSize.width: parent.width
-            sourceSize.height: parent.height 
-            source: "" /* bro what do I even make the background image for this*/
-            fillMode: Image.PreserveAspectCrop
-        }
-
-        Rectangle {
+        Column {
             anchors.fill: parent 
-            color: "transparent"
+            padding: 20 
+            spacing: 12 
 
             Text {
-                text: "16:38:33"
-                font.PixelSize: 24
+                text: "Leaderboard"
                 color: "white"
+                font.pixelSize: 28 
             }
+
+            
+        }
+
+        Text {
+            anchors.centerIn: parent
+            text: "Steps Challenge"
+            color: "white"
+            font.pixelSize: 28 
         }
     }
-
-} 
-
-
+}
