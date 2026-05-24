@@ -72,8 +72,7 @@ class StepsChallenge:
     
     # clear steps at the end of the week 
     def clear_steps_list(self): 
-        listy = [] 
-        self.steps_list = listy 
+        self.steps_list = [] 
         return self.steps_list 
     
     def curr_score(self): 
