@@ -92,7 +92,7 @@ Sally = StepsChallenge("Sally", 0)
 Sally_steps = 4090
 Sally.calculate_score(2, 4090)
 for i in range(7): 
-    Sally.ten_k_list_update(Sally_steps) # [4090, 4090, 4090, 4090, 4090, 4090, 4090]
+    Sally.ten_k_list_update(Sally_steps) # []
 
 print(Sally.bonus_points()) # should not print 5k or 10k bonus and score should be 3
 
