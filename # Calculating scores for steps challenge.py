@@ -1,4 +1,19 @@
 # Calculating scores for steps challenge 
+
+""" Rules for the game: Points will be gained at the end of each day:
+1st place - 3 points
+2nd place - 2 points
+3rd place - 1 point
+
+10k steps - 3 points
+6k steps - 2 points
+2k steps - 1 point
+
+Extra points will be rewarded at the end of each week (starting next week):
+
+Perfect week (5k+ steps everyday) - 5 points
+Perfect week (10k+ steps everyday) - 5 additional points"""
+
 class StepsChallenge: 
     def __init__(self, user_name, user_score): 
         self.user_name = user_name 
@@ -23,6 +38,8 @@ class StepsChallenge:
         if self.days_check >= 7: 
             self.bonus_points()
         
+        self.days_check += 1 
+        
         return self.user_score 
     
     # checks whether you've hit 5k --> 10k steps to calculate bonus 
@@ -38,11 +55,9 @@ class StepsChallenge:
         ten_bonus = 0
         while index < len(self.steps_list): 
             curr_num = self.steps_list[index]
-            if curr_num < 5000: # [5000, 5003, 5006, 7000, 10000]
-                return 0 
-            elif 5000 < curr_num < 10000: 
+            if 5000 <= curr_num < 10000: 
                 five_bonus += 1 
-            if curr_num >= 10000: 
+            elif curr_num >= 10000: 
                 ten_bonus += 1 
             
             index += 1 
